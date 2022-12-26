@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-size: 62.5%;
+}
+
+header{
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgb(185, 180, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 2.4rem;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    color: lightseagreen;
+    
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.box p{
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.box p span{
+    color: lightseagreen;
+}
+
+button{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+
+}
+
+@media (max-width: 1320px){
+    .box p{
+        font-size: 25px;
+        
+    }
+
+    button{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 770px){
+    .box p{
+        font-size: 14px;
+        
+    }
+    button{
+        font-size: 0.9rem;
+    }
+}
